@@ -15,6 +15,7 @@ tags:
 - black-forest-labs
 - modal
 - off-brand
+- off-the-grid
 - well-tuned
 - best-demo
 - text-to-image
@@ -34,9 +35,8 @@ polished FLUX prompt and costume image.
 - Training: Modal-hosted FLUX LoRA workflow
 - Parameter cap: FLUX.2 klein is a 4B model, under the 32B hackathon limit
 
-The app is structured to run generation in the Space runtime. If the local FLUX
-weights are unavailable during development, the app returns the uploaded
-portrait preview and logs the issue clearly.
+The app generates locally inside the Space runtime. If FLUX weights or adapter
+loading fail, it returns the uploaded portrait preview and logs the issue clearly.
 
 ## Hackathon Alignment
 
@@ -45,7 +45,7 @@ portrait preview and logs the issue clearly.
 | Gradio Space in `build-small-hackathon` | `build-small-hackathon/flux-costume-booth` |
 | Track | Thousand Token Wood |
 | Sponsor focus | Black Forest Labs FLUX.2 klein and Modal LoRA workflow |
-| Merit targets | Well-Tuned, Off-Brand, Best Demo |
+| Merit targets | Well-Tuned, Off-Brand, Best Demo, Off the Grid |
 | Multimodal input | Portrait upload/webcam, typed costume idea, microphone transcript |
 | Modal usage | Modal stages the FLUX LoRA caption dataset and adapter repo metadata |
 | Demo/social links | Add final demo video and social post links after recording |
